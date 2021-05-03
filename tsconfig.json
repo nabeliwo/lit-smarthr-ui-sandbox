@@ -3,6 +3,7 @@
     "sourceMap": true,
     "target": "ES2015",
     "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
     "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

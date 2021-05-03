@@ -12,7 +12,7 @@ module.exports = {
     path: resolve(__dirname, 'dist'),
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.js'],
   },
   module: {
     rules: [
@@ -24,7 +24,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.NoEmitOnErrorsPlugin(),
-  ],
+  plugins: [new webpack.NoEmitOnErrorsPlugin()],
 }
