@@ -1,3 +1,17 @@
 body {
+  margin: 0;
   font-family: system-ui, sans-serif;
+}
+.component-list {
+  margin: 0;
+  padding: 24px;
+  list-style: none;
+}
+.component-list > li:not(:first-child) {
+  margin-top: 24px;
+}
+.component-name {
+  margin: 0 0 16px 0;
+  font-weight: bold;
+  font-size: 18px;
 }

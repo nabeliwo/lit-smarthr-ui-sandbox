@@ -9,14 +9,22 @@
 </head>
 <body>
 
-<div>
-  <smarthr-ui-button id="test">プライマリーボタン</smarthr-ui-button>
-  <smarthr-ui-button theme="danger">デンジャーボタン</smarthr-ui-button>
-</div>
+<ul class="component-list">
+  <li>
+    <p class="component-name">Button</p>
 
-<div>
-  <accordion-panel></accordion-panel>
-</div>
+    <div>
+      <smarthr-ui-button id="test">プライマリーボタン</smarthr-ui-button>
+      <smarthr-ui-button theme="danger">デンジャーボタン</smarthr-ui-button>
+    </div>
+  </li>
+
+  <li>
+    <p class="component-name">Tooltip</p>
+
+    <smarthr-ui-tooltip message="sample text">This is tooltip. hover me.</smarthr-ui-tooltip>
+  </li>
+</ul>
 
 </body>
 </html>
