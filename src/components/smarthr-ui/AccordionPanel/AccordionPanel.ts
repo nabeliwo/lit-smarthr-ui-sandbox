@@ -1,62 +1,26 @@
 import { LitElement, css, html } from 'lit'
+import { property } from 'lit/decorators.js'
 
 export class AccordionPanel extends LitElement {
-  theme
-
-  static get properties() {
-    return {
-      theme: {},
-    }
-  }
-
-  constructor() {
-    super()
-    this.theme = 'primary'
-  }
+  @property({ type: Boolean, reflect: true, attribute: 'allow-multiple' })
+  public allowMultiple = false
 
   render() {
     return html`
-      <button class="button ${this.theme}">
+      <div class="wrapper">
         <slot></slot>
-      </button>
+      </div>
     `
   }
 
   static get styles() {
     return css`
-      .button {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        padding: 0px 16px;
-        border-radius: 6px;
-        border: none;
-        font-weight: bold;
-        font-size: 14px;
-        text-align: center;
-        vertical-align: middle;
-        text-decoration: none;
-        box-sizing: border-box;
-        cursor: pointer;
-      }
-      .button:focus {
-        outline: none;
-        box-shadow: #fff 0 0 0 2px, #0077c7 0 0 0 4px;
-      }
-      .primary {
-        background-color: #0077c7;
-        color: #fff;
-      }
-      .primary:hover {
-        background-color: #0068ae;
-      }
-      .danger {
-        background-color: #e01e5a;
-        color: #fff;
-      }
-      .danger:hover {
-        background-color: #ca1b51;
+      .wrapper {
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: rgb(51 51 51 / 15%) 0 0 4px 0;
+        background-color: #fff;
+        list-style: none;
       }
     `
   }
