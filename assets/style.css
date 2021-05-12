@@ -15,3 +15,9 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+.grid {
+  display: flex;
+}
+.grid > *:not(:first-child) {
+  margin-left: 16px;
+}

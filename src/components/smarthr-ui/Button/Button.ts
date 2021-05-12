@@ -51,6 +51,14 @@ export class Button extends LitElement {
       .primary:hover {
         background-color: #0068ae;
       }
+      .secondary {
+        border: 1px solid #d6d3d0;
+        background-color: #fff;
+        color: #23221f;
+      }
+      .secondary:hover {
+        background-color: #f2f2f2;
+      }
       .danger {
         background-color: #e01e5a;
         color: #fff;
